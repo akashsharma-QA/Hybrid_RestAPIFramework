@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Api Testsuite">
+    <listeners>
+        <listener class-name="utils.ExtentReporter"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="E:/RestAPIframework/Hybrid_restApiframework/E2E_Hybrid_Framework/src/test/java/testcases/producttest.java">
+        <classes>
+            <class name="testcases.producttest">
+                <methods>
+                    <include name="productTest"/>
+                    <include name="getsingleproduct"/>
+                    <include name="getproductcategory"/>
+                    <include name="getproduct_by_category"/>
+                    <include name="createproduct"/>
+                    <include name="updateproduct"/>
+                    <include name="deleteproduct"/>
+                </methods>
+
+            </class>
+        </classes>
+    </test>
+</suite>
